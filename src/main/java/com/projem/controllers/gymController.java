@@ -15,7 +15,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import java.util.TreeMap;
 import java.util.Map;
 
-import com.projem.models.LoginModel;
 import com.projem.models.weights.previousFood;
 import com.projem.services.businessServiceInterface;
 
@@ -52,11 +51,7 @@ public class gymController {
         return "gym/addNewWeights.html"; 
 
     }
-    @PostMapping("/information")
-    public String displayLoginForm(Model model){
-        model.addAttribute("loginModel", new LoginModel());
-        return "login/loginResult.html";
-    }   
+    
     
 
     @RequestMapping("/table")
