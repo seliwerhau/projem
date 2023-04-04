@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Homepage</title>
+        <link href="/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <!-- header -->
+        <div th:replace="layouts/commonHeader :: header">My header will go here</div>
+
+        <!-- content -->
+        <section layout:fragment="content">
+            <p>print</p>
+        </section>
+
+
+        <!-- footer-->
+        <div th:replace="layouts/commonFooter :: footer"></div>
+    </body>
+</html>

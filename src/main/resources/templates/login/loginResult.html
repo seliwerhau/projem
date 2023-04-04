@@ -1,0 +1,18 @@
+<html layout:decorate="layouts/defaultLayout">
+  <head>
+      <meta charset="UTF-8">
+        <title>Homepage</title>
+  </head>
+
+  <body>
+    
+    <div layout:fragment="content">
+      <div class="container mt-5 mb-5">
+        <div class="container" th:object="${loginModel}">
+            <p>Username: <span th:text="*{username}"></span></p>
+            <p>Password: <span th:text="*{password}"></span> </p>
+       </div>
+    </div>
+  </div>
+  </body>
+</html>

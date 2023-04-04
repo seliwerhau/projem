@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html layout:decorate="layouts/defaultLayout">
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>Food Insertion</title>
+    </head>
+    <body>
+        <div layout:fragment="content">
+            <div class="container mt-3 mb-3">
+                <table class="table table-success table-striped">
+                <thead>
+                <tr>
+                    <th class="active">
+                      <input type="checkbox" />
+                    </th>
+                    <th scope="col">Name of Food</th>
+                    <th scope="col">Weight(in grams)</th>
+                    <th scope="col">Protein</th>
+                    <th scope="col">Carb</th>
+                    <th scope="col">Fat</th>
+                    <th scope="col">Calories</th>
+                </tr>
+                </thead>
+                <tbody>
+                  
+                <tr class="calc-ow" th:each="food : ${foodListing}">
+                    
+                    <td class="active">
+                      <input type="checkbox">
+                    </td>
+                    <td th:text="${food.nameOfFood}">Mark</td>
+                    <td th:text="${food.weight}">Mark</td>
+                    <td th:text="${food.protein}">Mark</td>
+                    <td th:text="${food.carb}">Mark</td>
+                    <td th:text="${food.fat}">Mark</td>
+                    <td th:text="${food.calories}">Mark</td>
+                    <!-- <td>
+                        <form action="#" th:action="@{/form/delete}" th:object="${food}" method="post">
+                            <input name="nameOfFood" type="hidden" th:value="${food.nameOfFood}">
+                            <input name="weight" type="hidden" th:value="${food.weight}">
+                            <input name="protein" type="hidden" th:value="${food.protein}">
+                            <input name="carb" type="hidden" th:value="${food.carb}">
+                            <input name="fat" type="hidden" th:value="${food.fat}">
+                            <input name="calories" type="hidden" th:value="${food.calories}">
+                            <button class="btn btn-danger" type="submit" name="deleteItem">Delete</button>
+                        </form>
+                    </td> -->
+                </tr>
+                </tbody>
+            </table>
+            
+              
+              
+            
+            </div>
+        </div>
+        <script>
+            
+        
+        </script>
+    </body>
+
+    
+</html>

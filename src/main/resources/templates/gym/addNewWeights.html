@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html layout:decorate="layouts/defaultLayout" xmlns:th ="http://www.thymeleaf.org">
+    <head> 
+
+    </head>
+
+    <body>
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Active</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Weight</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Separated link</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Homepage</a>
+        </li>
+      </ul>
+        <div layout:fragment="content">
+          <div class="container mt-3 mb-3">
+            
+            <form name="form1" th:action="@{/form/table}" action="#" method="post" th:object="${foodObject}" onsubmit="required()" required>
+              <div class="mb-3">
+                <label for="foodNameInput" class="form-label">Name of the Food</label>
+                <input th:field="*{nameOfFood}" type="text" class="form-control" id="foodNameInput" aria-describedby="foodNameHelp">
+                <div id="foodNameHelp" class="form-text">Enter a name for this food</div>
+              </div> 
+ 
+                <div class="mb-3">
+                    <label for="weightFoodInput" class="form-label">Weight</label>
+                    <input th:field="*{weight}" type="number" class="form-control" id="weightFoodInput" aria-describedby="foodInputHelp">
+                    <div id="foodInputHelp" class="form-text">Enter the weight of this food in grams</div>
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="proteinInput" class="form-label">Protein</label>
+                    <input th:field="*{protein}" type="number" class="form-control" id="proteinInput" aria-describedby="proteinHelp">
+                    <div id="proteinHelp" class="form-text">Enter the protein amount of this food in given weight.</div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="carbInput" class="form-label">Carb</label>
+                    <input th:field="*{carb}" type="number" class="form-control" id="carbInput" aria-describedby="carbHelp">
+                    <div id="carbHelp" class="form-text">Enter the carb amount of this food in given weight.</div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="fatInput" class="form-label">Fat</label>
+                    <input th:field="*{fat}" type="number" class="form-control" id="fatInput" aria-describedby="fatHelp">
+                    <div id="fatHelp" class="form-text">Enter the fat amount of this food in given weight.</div>
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="calorieInput" class="form-label">Calories</label>
+                    <input th:field="*{calories}" type="number" class="form-control" id="calorieInput" aria-describedby="calorieHelp">
+                    <div id="calorieHelp" class="form-text">Enter the calorie amount for this food in given weight.</div>
+                  </div>
+                  
+
+                
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+        </div>
+       
+        </div>
+        <script>
+          function required(){
+            var empty = document.forms['form1']["foodNameInput"].values();
+            if (empty == ''){
+              alert("Please input a proper value");
+              return false;
+            }
+            else{
+              return true;
+            }
+          }
+        </script>
+
+    </body>
+</html>
+
