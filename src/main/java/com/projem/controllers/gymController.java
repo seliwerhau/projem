@@ -38,16 +38,18 @@ public class gymController {
         this.service = service;
     }
 
-    @GetMapping("oauth2/authorization/google")
+    @GetMapping("/")
     public String home(Model model){
         
         return "homepage.html";
     }
 
-    @GetMapping("login/oauth2/code/google")
+
+
+    @GetMapping("/login")
     public String oauth(Model model){
         
-        return "login/loginResult.html";
+        return "login/login.html";
     }
     
 

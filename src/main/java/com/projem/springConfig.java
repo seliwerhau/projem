@@ -13,11 +13,12 @@ import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+import org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration;
 import org.springframework.security.core.userdetails.UserDetailsService;
 
 @Configuration
 @EnableWebSecurity
-public class springConfig {
+public class springConfig  {
     @Bean(name="businessService", initMethod ="init", destroyMethod="destroy")
     @RequestScope
     public businessServiceInterface getBusiness(){
