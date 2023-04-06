@@ -1,4 +1,4 @@
-package com.LifeCoach;
+package com.projem;
 import javax.sql.DataSource;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -6,8 +6,8 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.context.annotation.RequestScope;
 
-import com.LifeCoach.data.*;
-import com.LifeCoach.services.*;
+import com.projem.data.*;
+import com.projem.services.*;
 
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;

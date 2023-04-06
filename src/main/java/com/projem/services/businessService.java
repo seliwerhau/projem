@@ -1,10 +1,10 @@
-package com.LifeCoach.services;
+package com.projem.services;
 
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import com.LifeCoach.data.*;
-import com.LifeCoach.models.weights.previousFood;
+import com.projem.data.*;
+import com.projem.models.weights.previousFood;
 
 
 // it only tells data layer to do something 

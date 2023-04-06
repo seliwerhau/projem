@@ -1,4 +1,4 @@
-package com.LifeCoach.controllers;
+package com.projem.controllers;
 
 import org.springframework.stereotype.Controller;
 
@@ -12,8 +12,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.LifeCoach.models.weights.previousFood;
-import com.LifeCoach.services.businessServiceInterface;
+import com.projem.models.weights.previousFood;
+import com.projem.services.businessServiceInterface;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import java.util.TreeMap;

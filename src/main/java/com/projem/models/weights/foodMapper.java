@@ -1,4 +1,4 @@
-package com.LifeCoach.models.weights;
+package com.projem.models.weights;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;

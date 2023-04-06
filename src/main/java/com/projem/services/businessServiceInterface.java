@@ -1,7 +1,7 @@
-package com.LifeCoach.services;
+package com.projem.services;
 import java.util.List;
 
-import com.LifeCoach.models.weights.*;
+import com.projem.models.weights.*;
 public interface businessServiceInterface {
     
     public void test();

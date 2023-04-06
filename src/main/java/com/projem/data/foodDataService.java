@@ -1,4 +1,4 @@
-package com.LifeCoach.data;
+package com.projem.data;
 
 import java.util.List;
 
@@ -10,8 +10,8 @@ import org.springframework.context.annotation.Primary;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
-import com.LifeCoach.models.weights.foodMapper;
-import com.LifeCoach.models.weights.previousFood;
+import com.projem.models.weights.foodMapper;
+import com.projem.models.weights.previousFood;
 
 
 
