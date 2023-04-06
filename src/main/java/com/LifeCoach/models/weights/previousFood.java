@@ -1,4 +1,4 @@
-package com.projem.models.weights;
+package com.LifeCoach.models.weights;
 // this class is storing our data types that we are going to put it inside of our table
 // so for my table(database) i need some properties (same as django models)
 

@@ -1,10 +1,11 @@
-package com.projem.data;
+package com.LifeCoach.data;
 
 import java.util.List;
 import java.util.ArrayList;
 import java.util.stream.Collectors;
 import org.springframework.stereotype.Repository;
-import com.projem.models.weights.*;
+
+import com.LifeCoach.models.weights.*;
 
 @Repository
 public class foodFakeDAO implements foodDataAccessInterface {

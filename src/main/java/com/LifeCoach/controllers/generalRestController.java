@@ -1,4 +1,4 @@
-package com.projem.controllers;
+package com.LifeCoach.controllers;
 
 import java.util.List;
 import java.util.ArrayList;
@@ -12,11 +12,10 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.PutMapping;
-
-
-import com.projem.models.weights.previousFood;
-import com.projem.services.businessServiceInterface;
 import org.springframework.web.bind.annotation.RestController;
+
+import com.LifeCoach.models.weights.previousFood;
+import com.LifeCoach.services.businessServiceInterface;
 
 
 @RestController

@@ -1,6 +1,7 @@
-package com.projem.data;
-import com.projem.models.weights.previousFood;
+package com.LifeCoach.data;
 import java.util.List;
+
+import com.LifeCoach.models.weights.previousFood;
 public interface foodDataAccessInterface {
     
     public previousFood getById(int id);

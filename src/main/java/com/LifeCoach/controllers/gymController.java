@@ -1,4 +1,4 @@
-package com.projem.controllers;
+package com.LifeCoach.controllers;
 
 import org.springframework.stereotype.Controller;
 
@@ -11,24 +11,24 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
+
+import com.LifeCoach.models.weights.previousFood;
+import com.LifeCoach.services.businessServiceInterface;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import java.util.TreeMap;
 import java.util.Map;
 
-import com.projem.models.weights.previousFood;
-import com.projem.services.businessServiceInterface;
-
 import jakarta.validation.Valid;
 
 import org.springframework.stereotype.Controller;
-import com.projem.models.weights.previousFood;
 
 import java.util.List;
 import java.util.TreeMap;
 
 import javax.xml.validation.*;
 @Controller
-@RequestMapping("/form")
+@RequestMapping("/")
 public class gymController {
     businessServiceInterface service;
 
@@ -38,11 +38,18 @@ public class gymController {
         this.service = service;
     }
 
-    @GetMapping("/homepage")
+    @GetMapping("oauth2/authorization/google")
     public String home(Model model){
         
         return "homepage.html";
     }
+
+    @GetMapping("login/oauth2/code/google")
+    public String oauth(Model model){
+        
+        return "login/loginResult.html";
+    }
+    
 
     @GetMapping("/addNew")
     public String showFoodForm(Model model){
