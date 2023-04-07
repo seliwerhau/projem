@@ -37,7 +37,6 @@ public class gymController {
         super();
         this.service = service;
     }
-
     @GetMapping("/")
     public String home(Model model){
         
