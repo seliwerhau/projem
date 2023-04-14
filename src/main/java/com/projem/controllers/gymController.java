@@ -5,28 +5,20 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.Mapping;
-import org.springframework.web.bind.annotation.PathVariable;
+
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
 
 import com.projem.models.weights.previousFood;
 import com.projem.services.businessServiceInterface;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import java.util.TreeMap;
-import java.util.Map;
 
 import jakarta.validation.Valid;
 
-import org.springframework.stereotype.Controller;
 
 import java.util.List;
-import java.util.TreeMap;
 
-import javax.xml.validation.*;
 @Controller
 @RequestMapping("/")
 public class gymController {
@@ -37,6 +29,7 @@ public class gymController {
         super();
         this.service = service;
     }
+    
     @GetMapping("/")
     public String home(Model model){
         
